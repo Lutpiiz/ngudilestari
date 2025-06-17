@@ -1,6 +1,6 @@
 <div class="container">
     <div class="kontak-box">
-        <h1 class="text-center text-white">Hubungi Kami</h1>
+        <h1 class="text-center text-white" style="font-size: 40px; font-weight:600;">Hubungi Kami</h1>
         <div class="row">
             <div class="col-6 px-5 py-5 text-white">
                 <div class="contact-item">

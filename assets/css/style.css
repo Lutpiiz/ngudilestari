@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 body {
-  font-family: "Open-Sans", sans-serif !important;
+  font-family: "Rubik", sans-serif !important;
 }
 
 .navbar .navbar-brand,
@@ -9,6 +9,7 @@ body {
   color: white !important;
 }
 
+/* Kontak */
 .kontak-box {
   background-color: #499e4d !important;
   margin-top: 3rem;
@@ -34,4 +35,39 @@ body {
   background: rgba(255, 255, 255, 0.3);
   padding: 2rem;
   border-radius: 15px;
+}
+
+/* Program */
+.programs {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 2rem 2rem;
+  margin: 2rem 0;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.program-card {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 15px;
+  border-left: 5px solid #4caf50;
+  transition: all 0.3s ease;
+}
+
+.program-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.program-title {
+  font-size: 1.3rem;
+  color: #2e7d32;
+  margin-bottom: 1rem;
 }
