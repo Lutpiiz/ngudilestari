@@ -3,7 +3,7 @@
     <div class="row mt-5">
         <div class="col-4">
             <div class="card mb-4">
-                <img src="<?php echo $this->config->item('url_image') . '2.png'; ?>" class="card-img-top" alt="...">
+                <img src="<?php echo $this->config->item('url_image') . 'kurban.jpg'; ?>" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Gotong Royong Pembersihan Saluran Irigasi</p>
                     <p class="card-text">5 Februari 2025</p>
@@ -13,7 +13,7 @@
         </div>
         <div class="col-4">
             <div class="card mb-4">
-                <img src="<?php echo $this->config->item('url_image') . '2.png'; ?>" class="card-img-top" alt="...">
+                <img src="<?php echo $this->config->item('url_image') . 'kurban.jpg'; ?>" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Gotong Royong Pembersihan Saluran Irigasi</p>
                     <p class="card-text">5 Februari 2025</p>
@@ -23,7 +23,7 @@
         </div>
         <div class="col-4">
             <div class="card mb-4">
-                <img src="<?php echo $this->config->item('url_image') . '2.png'; ?>" class="card-img-top" alt="...">
+                <img src="<?php echo $this->config->item('url_image') . 'kurban.jpg'; ?>" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Gotong Royong Pembersihan Saluran Irigasi</p>
                     <p class="card-text">5 Februari 2025</p>
@@ -33,7 +33,7 @@
         </div>
         <div class="col-4">
             <div class="card mb-4">
-                <img src="<?php echo $this->config->item('url_image') . '2.png'; ?>" class="card-img-top" alt="...">
+                <img src="<?php echo $this->config->item('url_image') . 'kurban.jpg'; ?>" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Gotong Royong Pembersihan Saluran Irigasi</p>
                     <p class="card-text">5 Februari 2025</p>
@@ -43,7 +43,7 @@
         </div>
         <div class="col-4">
             <div class="card mb-4">
-                <img src="<?php echo $this->config->item('url_image') . '2.png'; ?>" class="card-img-top" alt="...">
+                <img src="<?php echo $this->config->item('url_image') . 'kurban.jpg'; ?>" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Gotong Royong Pembersihan Saluran Irigasi</p>
                     <p class="card-text">5 Februari 2025</p>
@@ -53,7 +53,7 @@
         </div>
         <div class="col-4">
             <div class="card mb-4">
-                <img src="<?php echo $this->config->item('url_image') . '2.png'; ?>" class="card-img-top" alt="...">
+                <img src="<?php echo $this->config->item('url_image') . 'kurban.jpg'; ?>" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Gotong Royong Pembersihan Saluran Irigasi</p>
                     <p class="card-text">5 Februari 2025</p>
@@ -63,7 +63,7 @@
         </div>
         <div class="col-4">
             <div class="card mb-4">
-                <img src="<?php echo $this->config->item('url_image') . '2.png'; ?>" class="card-img-top" alt="...">
+                <img src="<?php echo $this->config->item('url_image') . 'kurban.jpg'; ?>" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Gotong Royong Pembersihan Saluran Irigasi</p>
                     <p class="card-text">5 Februari 2025</p>
@@ -73,7 +73,7 @@
         </div>
         <div class="col-4">
             <div class="card mb-4">
-                <img src="<?php echo $this->config->item('url_image') . '2.png'; ?>" class="card-img-top" alt="...">
+                <img src="<?php echo $this->config->item('url_image') . 'kurban.jpg'; ?>" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Gotong Royong Pembersihan Saluran Irigasi</p>
                     <p class="card-text">5 Februari 2025</p>
@@ -83,7 +83,7 @@
         </div>
         <div class="col-4">
             <div class="card mb-4">
-                <img src="<?php echo $this->config->item('url_image') . '2.png'; ?>" class="card-img-top" alt="...">
+                <img src="<?php echo $this->config->item('url_image') . 'kurban.jpg'; ?>" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Gotong Royong Pembersihan Saluran Irigasi</p>
                     <p class="card-text">5 Februari 2025</p>
