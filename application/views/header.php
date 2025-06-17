@@ -43,7 +43,7 @@ switch ($controller) {
 
 <body style="background-color: <?= $body_color ?>;">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg" style="background-color: #307e32;">
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #307e32;">
         <div class="container">
             <a class="navbar-brand" href="#">Kelompok Tani Ngudi Lestari</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
