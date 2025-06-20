@@ -45,7 +45,7 @@ switch ($controller) {
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #307e32;">
         <div class="container">
-            <a class="navbar-brand" href="#">Kelompok Tani Ngudi Lestari</a>
+            <a class="navbar-brand" href="<?php echo base_url('welcome') ?>"><img src="<?php echo $this->config->item('url_image') . 'Agriculture Logo.png'; ?>" alt="" width="50px" class="me-3"><span style="font-weight: 600;">Kelompok Tani Ngudi Lestari</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

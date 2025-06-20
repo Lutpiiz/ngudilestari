@@ -18,37 +18,37 @@
         </div>
         <div class="row col-6">
             <div class="col-6 mb-3">
-                <div class="card" style="width: 18rem;">
+                <div class="card shadow" style="width: 15rem; color: #499e4d; margin-left: 50px; border-radius: 15px;">
                     <i class="fa-solid fa-users fa-3x text-center mt-4"></i>
                     <div class="card-body">
-                        <p class="text-center">150+</p>
+                        <p class="text-center" style="font-size: 30px;">150+</p>
                         <p class="text-center">Anggota Aktif</p>
                     </div>
                 </div>
             </div>
             <div class="col-6 mb-3">
-                <div class="card" style="width: 18rem;">
+                <div class="card shadow" style="width: 15rem; color: #499e4d; margin-left: 0px; border-radius: 15px;">
                     <i class="fa-solid fa-leaf fa-3x text-center mt-4"></i>
                     <div class="card-body">
-                        <p class="text-center">500</p>
+                        <p class="text-center" style="font-size: 30px;">500</p>
                         <p class="text-center">Hektar Lahan</p>
                     </div>
                 </div>
             </div>
             <div class="col-6 mb-3">
-                <div class="card" style="width: 18rem;">
+                <div class="card shadow" style="width: 15rem; color: #499e4d; margin-left: 50px; border-radius: 15px;">
                     <i class="fa-solid fa-medal fa-3x text-center mt-4"></i>
                     <div class="card-body">
-                        <p class="text-center">10+</p>
+                        <p class="text-center" style="font-size: 30px;">10+</p>
                         <p class="text-center">Penghargaan</p>
                     </div>
                 </div>
             </div>
             <div class="col-6 mb-3">
-                <div class="card" style="width: 18rem;">
+                <div class="card shadow" style="width: 15rem; color: #499e4d; margin-left: 0px; border-radius: 15px;">
                     <i class="fa-solid fa-calendar-days fa-3x text-center mt-4"></i>
                     <div class="card-body">
-                        <p class="text-center">8</p>
+                        <p class="text-center" style="font-size: 30px;">8</p>
                         <p class="text-center">Tahun Berdiri</p>
                     </div>
                 </div>
