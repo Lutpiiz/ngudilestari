@@ -1,5 +1,5 @@
 <div class="container mt-5">
-    <h1 style="color: white; font-size: 40px; font-weight:600;" class="text-center">Pengurus Kelompok</h1>
+    <h1 style="color: #307e32; font-size: 40px; font-weight:600;" class="text-center">Pengurus Kelompok</h1>
     <div class="row mt-5">
         <div class="col-3">
             <div class="card mb-4">

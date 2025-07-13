@@ -1,0 +1,31 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Inventaris extends CI_Controller {
+
+    public function __construct() {
+        parent::__construct();
+        $this->load->model('Minventaris');
+    }
+
+    public function index() {
+        $data['inventaris'] = $this->Minventaris->index();
+
+        $this->load->view('header');
+        $this->load->view('inventaris', $data);
+        $this->load->view('footer');
+    }
+
+    public function tambah() {
+        $this->load->view('header');
+        $this->load->view('tambah_inventaris');
+        $this->load->view('footer');
+    }
+
+    public function tambahkan() {
+        $input = $this->input->post();
+        $this->Minventaris->tambah($input);
+        $this->session->set_flashdata('pesan_sukses', 'Data inventaris berhasil ditambahkan!');
+        redirect('inventaris', 'refresh');
+    }
+}
