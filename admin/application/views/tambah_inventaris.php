@@ -1,5 +1,5 @@
 <div class="container-fluid row" style="margin-bottom: -100px;">
-    <div class="col-md-2 bg-white p-5">
+    <div class="col-md-2 bg-white p-5 shadow">
         <a href="<?php echo base_url('inventaris') ?>" class="text-decoration-none text-dark fs-5"><i class="fa-solid fa-inbox me-1" style="width: 20px;"></i>Barang</a><br>
         <a href="<?php echo base_url('inventaris/pinjam') ?>" class="text-decoration-none text-dark fs-5"><i class="fa-solid fa-file-lines me-1" style="width: 20px;"></i>Peminjaman</a>
     </div>
@@ -11,7 +11,6 @@
                     <div class="mb-3">
                         <label>Nama Barang</label>
                         <input type="text" name="nama_barang" class="form-control" value="<?php echo set_value("nama_barang") ?>" required>
-                        <span class="text-muted"><?php echo form_error("nama_barang") ?></span>
                     </div>
                     <div class="mb-3">
                         <label>Asal Barang</label>
@@ -22,17 +21,14 @@
                             <option value="Bantuan Kabupaten">Bantuan Kabupaten</option>
                             <option value="Hibah Pemerintah">Hibah Pemerintah</option>
                         </select>
-                        <span class="text-muted"><?php echo form_error("asal_barang") ?></span>
                     </div>
                     <div class="mb-3">
                         <label>Jumlah</label>
                         <input type="number" name="jumlah" class="form-control" value="<?php echo set_value("jumlah") ?>" required>
-                        <span class="text-muted"><?php echo form_error("jumlah") ?></span>
                     </div>
                     <div class="mb-3">
                         <label>Harga Barang</label>
                         <input type="number" name="harga_barang" class="form-control" value="<?php echo set_value("harga_barang") ?>" required>
-                        <span class="text-muted"><?php echo form_error("harga_barang") ?></span>
                     </div>
                     <div class="mb-3">
                         <label>Kondisi Barang</label>
@@ -41,7 +37,6 @@
                             <option value="Layak">Layak</option>
                             <option value="Rusak">Rusak</option>
                         </select>
-                        <span class="text-muted"><?php echo form_error("kondisi_barang") ?></span>
                     </div>
                     <div class="mb-3">
                         <label>Foto Barang</label>
@@ -50,7 +45,6 @@
                     <div class="mb-3">
                         <label>Tanggal Perolehan</label>
                         <input type="date" name="tanggal_perolehan" class="form-control" value="<?php echo set_value("tanggal_perolehan") ?>" required>
-                        <span class="text-muted"><?php echo form_error("tanggal_perolehan") ?></span>
                     </div>
                     <div style="text-align: end;">
                         <button class="btn btn-success" type="submit" style="width: 20%;">Kirim</button>

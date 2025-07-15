@@ -1,5 +1,5 @@
 <div class="container-fluid row" style="margin-bottom: -100px;">
-    <div class="col-md-2 bg-white p-5">
+    <div class="col-md-2 bg-white p-5 shadow">
         <a href="<?php echo base_url('inventaris') ?>" class="text-decoration-none text-dark fs-5"><i class="fa-solid fa-inbox me-1" style="width: 20px;"></i>Barang</a><br>
         <a href="<?php echo base_url('inventaris/pinjam') ?>" class="text-decoration-none text-dark fs-5"><i class="fa-solid fa-file-lines me-1" style="width: 20px;"></i>Peminjaman</a>
     </div>
@@ -38,8 +38,8 @@
                                 <td>Rp. <?php echo number_format($value['harga_barang'], 0, ',', '.'); ?></td>
                                 <td><?php echo $value['kondisi_barang']; ?></td>
                                 <td>
-                                    <a href="<?php echo base_url('inventaris/edit/' . $value['id_inventaris']); ?>"
-                                        class="btn btn-danger text-white">Edit</a>
+                                    <a href="<?php echo base_url('inventaris/edit/' . $value['id_inventaris']); ?>" class="btn btn-warning text-white">Edit</a>
+                                    <a href="#!" onclick="confirmDelete(<?php echo $value['id_inventaris']; ?>)" class="btn btn-danger">Hapus</a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>
@@ -49,3 +49,21 @@
         </div>
     </div>
 </div>
+
+<script>
+    function confirmDelete(id_inventaris) {
+        Swal.fire({
+            title: 'Yakin ingin menghapus?',
+            text: "Data yang dihapus tidak dapat dikembalikan!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya, hapus!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "<?php echo base_url('inventaris/hapus/'); ?>" + id_inventaris;
+            }
+        });
+    }
+</script>
