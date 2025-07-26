@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Minventaris extends CI_Model {
 
     public function __construct() {
-        parent::__construct(); // ini penting!
+        parent::__construct();
     }
 
     public function index() {

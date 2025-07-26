@@ -1,45 +1,61 @@
-<div class="container mt-5">
-    <h1 style="color: #307e32; font-size: 40px; font-weight:600;" class="text-center">Pengurus Kelompok</h1>
-    <div class="row mt-5">
-        <div class="col-3">
-            <div class="card mb-4">
-                <img src="<?php echo $this->config->item('url_image') . 'anggota1.jpg'; ?>" class="card-img-top" alt="...">
-                <div class="card-body text-center">
-                    <p class="card-text"><strong>Bapak Suyanto</strong></p>
-                    <p class="card-text">Ketua Kelompok</p>
-                    <p class="card-text">Petani berpengalaman 20 tahun, ahli dalam budidaya padi organik.</p>
-                </div>
+<div class="container">
+    <div class="mt-4">
+        <div class="row">
+            <div class="col-md-auto me-auto">
+                <h1>Anggota</h1>
+            </div>
+            <div class="col-md-auto ms-auto">
+                <a href="<?php echo base_url('anggota/tambah') ?>" class="btn btn-success">+ Tambah Data</a>
             </div>
         </div>
-        <div class="col-3">
-            <div class="card mb-4">
-                <img src="<?php echo $this->config->item('url_image') . 'anggota2.jpg'; ?>" class="card-img-top" alt="...">
-                <div class="card-body text-center">
-                    <p class="card-text"><strong>Ibu Siti Aminah</strong></p>
-                    <p class="card-text">Sekretaris</p>
-                    <p class="card-text">Spesialis dalam manajemen administrasi dan keuangan kelompok.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card mb-4">
-                <img src="<?php echo $this->config->item('url_image') . 'anggota3.jpg'; ?>" class="card-img-top" alt="...">
-                <div class="card-body text-center">
-                    <p class="card-text"><strong>Bapak Joko Susilo</strong></p>
-                    <p class="card-text">Bendahara</p>
-                    <p class="card-text">Mengelola keuangan dan program koperasi kelompok tani.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card mb-4">
-                <img src="<?php echo $this->config->item('url_image') . 'anggota4.jpg'; ?>" class="card-img-top" alt="...">
-                <div class="card-body text-center">
-                    <p class="card-text"><strong>Ibu Tri Wahyuni</strong></p>
-                    <p class="card-text">Koordinator Program</p>
-                    <p class="card-text">Mengkoordinasikan berbagai program pelatihan dan pengembangan.</p>
-                </div>
-            </div>
+        <div>
+            <table class="table" id="tabelku">
+                <thead>
+                    <tr>
+                        <th scope="col" style="background-color: #f0f0f0; text-align: center;">No</th>
+                        <th scope="col" style="background-color: #f0f0f0; text-align: center;">Nama</th>
+                        <th scope="col" style="background-color: #f0f0f0; text-align: center;">Jabatan</th>
+                        <th scope="col" style="background-color: #f0f0f0; text-align: center;">No Telepon</th>
+                        <th scope="col" style="background-color: #f0f0f0; text-align: center;">Alamat</th>
+                        <th scope="col" style="background-color: #f0f0f0; text-align: center;">Foto Anggota</th>
+                        <th scope="col" style="background-color: #f0f0f0; text-align: center;">Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach ($anggota as $key => $value) : ?>
+                        <tr class="text-center">
+                            <td><?php echo $key += 1 ?></td>
+                            <td><?php echo $value['nama'] ?></td>
+                            <td><?php echo $value['jabatan'] ?></td>
+                            <td><?php echo $value['no_telepon']; ?></td>
+                            <td><?php echo $value['alamat']; ?></td>
+                            <td><img src="<?php echo $this->config->item('url_anggota') . $value['foto_anggota'] ?>" alt="" width="200px"></td>
+                            <td>
+                                <a href="<?php echo base_url('anggota/edit/' . $value['id_anggota']); ?>" class="btn btn-warning text-white">Edit</a>
+                                <a href="#!" onclick="confirmDelete(<?php echo $value['id_anggota']; ?>)" class="btn btn-danger">Hapus</a>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
+
+<script>
+    function confirmDelete(id_inventaris) {
+        Swal.fire({
+            title: 'Yakin ingin menghapus?',
+            text: "Data yang dihapus tidak dapat dikembalikan!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya, hapus!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "<?php echo base_url('anggota/hapus/'); ?>" + id_inventaris;
+            }
+        });
+    }
+</script>

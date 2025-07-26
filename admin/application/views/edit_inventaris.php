@@ -16,7 +16,7 @@
                     <div class="mb-3">
                         <label>Asal Barang</label>
                         <?php $selected = set_value('asal_barang', $inventaris['asal_barang']); ?>
-                        <select class="form-control" id="asal_barang" name="asal_barang" value="<?php echo set_value("asal_barang", $inventaris['asal_barang']) ?>" required>
+                        <select class="form-control" name="asal_barang" value="<?php echo set_value("asal_barang", $inventaris['asal_barang']) ?>" required>
                             <option value="Dana Kelompok Tani" <?php echo $selected == 'Dana Kelompok Tani' ? 'selected' : '' ?>>Dana Kelompok Tani</option>
                             <option value="Dana Desa" <?php echo $selected == 'Dana Desa' ? 'selected' : '' ?>>Dana Desa</option>
                             <option value="Sumbangan Anggota" <?php echo $selected == 'Sumbangan Anggota' ? 'selected' : '' ?>>Sumbangan Anggota</option>
