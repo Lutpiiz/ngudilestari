@@ -4,9 +4,9 @@
     }
 </style>
 
-<div class="container pt-4">
-    <h1>Peta Lahan</h1>
-    <div class="row">
+<div class="container mt-5">
+    <h1 style="color: #307e32; font-size: 40px; font-weight:600;" class="text-center">Peta Lahan</h1>
+    <div class="row mt-5">
         <div class="col-md-9">
             <div id="map"></div>
         </div>

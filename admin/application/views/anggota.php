@@ -43,7 +43,7 @@
 </div>
 
 <script>
-    function confirmDelete(id_inventaris) {
+    function confirmDelete(id_anggota) {
         Swal.fire({
             title: 'Yakin ingin menghapus?',
             text: "Data yang dihapus tidak dapat dikembalikan!",
@@ -54,7 +54,7 @@
             confirmButtonText: 'Ya, hapus!'
         }).then((result) => {
             if (result.isConfirmed) {
-                window.location.href = "<?php echo base_url('anggota/hapus/'); ?>" + id_inventaris;
+                window.location.href = "<?php echo base_url('anggota/hapus/'); ?>" + id_anggota;
             }
         });
     }

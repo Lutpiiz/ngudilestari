@@ -30,6 +30,8 @@ $config['inventaris'] = $_SERVER["DOCUMENT_ROOT"]."/ngudilestari/assets/inventar
 $config['url_inventaris'] = 'https://localhost/ngudilestari/assets/inventaris/';
 $config['anggota'] = $_SERVER["DOCUMENT_ROOT"]."/ngudilestari/assets/anggota/";
 $config['url_anggota'] = 'https://localhost/ngudilestari/assets/anggota/';
+$config['program'] = $_SERVER["DOCUMENT_ROOT"]."/ngudilestari/assets/program/";
+$config['url_program'] = 'https://localhost/ngudilestari/assets/program/';
 
 $config['url_assets'] = 'https://localhost/ngudilestari/assets/';
 

@@ -26,6 +26,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $config['base_url'] = 'https://localhost/ngudilestari/';
 $config['image'] = $_SERVER["DOCUMENT_ROOT"]."/ngudilestari/assets/image/";
 $config['url_image'] = 'https://localhost/ngudilestari/assets/image/';
+$config['inventaris'] = $_SERVER["DOCUMENT_ROOT"]."/ngudilestari/assets/inventaris/";
+$config['url_inventaris'] = 'https://localhost/ngudilestari/assets/inventaris/';
+$config['anggota'] = $_SERVER["DOCUMENT_ROOT"]."/ngudilestari/assets/anggota/";
+$config['url_anggota'] = 'https://localhost/ngudilestari/assets/anggota/';
+$config['program'] = $_SERVER["DOCUMENT_ROOT"]."/ngudilestari/assets/program/";
+$config['url_program'] = 'https://localhost/ngudilestari/assets/program/';
 
 /*
 |--------------------------------------------------------------------------

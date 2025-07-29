@@ -71,3 +71,10 @@ body {
   color: #2e7d32;
   margin-bottom: 1rem;
 }
+
+/* Anggota */
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+  /* aspect-ratio: 16/9; */
+}

@@ -1,95 +1,59 @@
-<div class="container mt-5">
-    <h1 style="color: #307e32; font-size: 40px; font-weight:600;" class="text-center">Galeri Kegiatan</h1>
-    <div class="row mt-5">
-        <div class="col-4">
-            <div class="card mb-4">
-                <img src="<?php echo $this->config->item('url_image') . 'rice-fields-7054018.jpg'; ?>" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text"><strong>Pelatihan Pertanian Organik</strong></p>
-                    <p class="card-text">15 Februari 2025</p>
-                    <p class="card-text">Pelatihan intensif tentang teknik budidaya organik dan pembuatan pupuk kompos untuk 25 anggota kelompok tani.</p>
-                </div>
+<div class="container">
+    <div class="mt-4">
+        <div class="row">
+            <div class="col-md-auto me-auto">
+                <h1>Galeri</h1>
+            </div>
+            <div class="col-md-auto ms-auto">
+                <a href="<?php echo base_url('galeri/tambah') ?>" class="btn btn-success">+ Tambah Data</a>
             </div>
         </div>
-        <div class="col-4">
-            <div class="card mb-4">
-                <img src="<?php echo $this->config->item('url_image') . 'indonesia-1203250.jpg'; ?>" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text"><strong>Panen Raya Padi Organik</strong></p>
-                    <p class="card-text">10 Maret 2025</p>
-                    <p class="card-text">Kegiatan panen raya padi organik yang menghasilkan 15 ton gabah kering dengan kualitas premium.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="card mb-4">
-                <img src="<?php echo $this->config->item('url_image') . 'paddy-5235383.jpg'; ?>" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text"><strong>Instalasi Sistem Irigasi Tetes</strong></p>
-                    <p class="card-text">25 Januari 2025</p>
-                    <p class="card-text">Pemasangan sistem irigasi tetes modern untuk menghemat air hingga 40% dan meningkatkan efisiensi pertanian.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="card mb-4">
-                <img src="<?php echo $this->config->item('url_image') . 'farmer-4477281.jpg'; ?>" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text"><strong>Gotong Royong Pembersihan Saluran Irigasi</strong></p>
-                    <p class="card-text">5 Februari 2025</p>
-                    <p class="card-text">Kegiatan bersama membersihkan dan memperbaiki saluran irigasi sepanjang 2 km untuk kelancaran air.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="card mb-4">
-                <img src="<?php echo $this->config->item('url_image') . 'farmer-1822530.jpg'; ?>" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text"><strong>Workshop Teknologi Pertanian Digital</strong></p>
-                    <p class="card-text">20 Maret 2025</p>
-                    <p class="card-text">Pelatihan penggunaan aplikasi mobile untuk monitoring tanaman dan prediksi cuaca untuk pertanian presisi.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="card mb-4">
-                <img src="<?php echo $this->config->item('url_image') . 'farm-1737182.jpg'; ?>" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text"><strong>Panen Sayuran Hidroponik</strong></p>
-                    <p class="card-text">12 Maret 2025</p>
-                    <p class="card-text">Hasil panen pertama dari program sayuran hidroponik dengan produksi 500 kg sayuran segar per bulan.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="card mb-4">
-                <img src="<?php echo $this->config->item('url_image') . 'rice-fields-7054018.jpg'; ?>" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text"><strong>Pembangkit Listrik Tenaga Surya</strong></p>
-                    <p class="card-text">1 April 2025</p>
-                    <p class="card-text">Instalasi panel surya 10 kW untuk mensuplai kebutuhan listrik greenhouse dan sistem irigasi otomatis.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="card mb-4">
-                <img src="<?php echo $this->config->item('url_image') . 'indonesia-1203250.jpg'; ?>" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text"><strong>Pembangunan Gudang Penyimpanan</strong></p>
-                    <p class="card-text">18 Februari 2025</p>
-                    <p class="card-text">Pembangunan gudang penyimpanan hasil panen dengan kapasitas 50 ton dan sistem kontrol kelembaban.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="card mb-4">
-                <img src="<?php echo $this->config->item('url_image') . 'paddy-5235383.jpg'; ?>" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text"><strong>Pelatihan Manajemen Keuangan Petani</strong></p>
-                    <p class="card-text">8 Maret 2025</p>
-                    <p class="card-text">Workshop pengelolaan keuangan usaha tani, pembukuan sederhana, dan strategi pemasaran hasil pertanian.</p>
-                </div>
-            </div>
+        <div>
+            <table class="table" id="tabelku">
+                <thead>
+                    <tr>
+                        <th scope="col" style="background-color: #f0f0f0; text-align: center;">No</th>
+                        <th scope="col" style="background-color: #f0f0f0; text-align: center;">Nama</th>
+                        <th scope="col" style="background-color: #f0f0f0; text-align: center;">Tanggal Kegiatan</th>
+                        <th scope="col" style="background-color: #f0f0f0; text-align: center;">Deskripsi Kegiatan</th>
+                        <th scope="col" style="background-color: #f0f0f0; text-align: center;">Foto Galeri</th>
+                        <th scope="col" style="background-color: #f0f0f0; text-align: center;">Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach ($galeri as $key => $value) : ?>
+                        <tr class="text-center">
+                            <td><?php echo $key += 1 ?></td>
+                            <td><?php echo $value['nama_kegiatan'] ?></td>
+                            <td><?php echo date('d F Y', strtotime($value['tanggal_kegiatan'])); ?></td>
+                            <td><?php echo $value['deskripsi_kegiatan']; ?></td>
+                            <td><img src="<?php echo $this->config->item('url_program') . $value['foto_kegiatan'] ?>" alt="" width="200px"></td>
+                            <td>
+                                <a href="<?php echo base_url('galeri/edit/' . $value['id_galeri']); ?>" class="btn btn-warning text-white">Edit</a>
+                                <a href="#!" onclick="confirmDelete(<?php echo $value['id_galeri']; ?>)" class="btn btn-danger">Hapus</a>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
+
+<script>
+    function confirmDelete(id_galeri) {
+        Swal.fire({
+            title: 'Yakin ingin menghapus?',
+            text: "Data yang dihapus tidak dapat dikembalikan!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya, hapus!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "<?php echo base_url('galeri/hapus/'); ?>" + id_galeri;
+            }
+        });
+    }
+</script>

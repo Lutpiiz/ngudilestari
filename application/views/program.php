@@ -1,6 +1,6 @@
 <div class="container mt-5">
     <div class="programs">
-        <h1 style="font-size: 40px; font-weight:600;" class="text-center text-white">Program Unggulan</h1>
+        <h1 style="color: #307e32; font-size: 40px; font-weight:600;" class="text-center">Program Unggulan</h1>
         <div class="program-grid">
             <div class="program-card">
                 <div class="program-icon">🌱</div>
