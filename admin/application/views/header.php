@@ -4,13 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ngudi Lestari</title>
+    <title>Admin Ngudi Lestari</title>
     <link rel="stylesheet" href="<?php echo $this->config->item('url_assets') . 'css/style.css' ?>">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $this->config->item('url_image') . 'logo1.png' ?>">
 </head>
 
 <body style="background-color: #fafafa;">
@@ -36,12 +37,29 @@
                 </ul>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="">Hi, Admin</a>
+                        <a class="nav-link" href="">Halo, <?php echo $this->session->userdata('nama') ?>!</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url('logout') ?>">Logout</a>
+                        <a class="nav-link" href="#!" onclick="confirmLogout()">Logout</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <script>
+        function confirmLogout() {
+            Swal.fire({
+                title: 'Logout sekarang?',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Ya'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = "<?php echo base_url('logout'); ?>";
+                }
+            });
+        }
+    </script>
